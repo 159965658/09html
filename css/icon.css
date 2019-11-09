@@ -1,0 +1,34 @@
+.my-icon {
+  font-size: 0;
+}
+.my-icon::before {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  content: " ";
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.icon-print::before {
+  background-image: url("../images/print.png");
+}
+.icon-yin::before {
+  background-image: url("../images/yin.png");
+}
+.icon-share::before {
+  background-image: url("../images/share.png");
+}
+
+.icon-star::before {
+  background-image: url("../images/star.png");
+}
+.icon-user::before {
+  height: 18px;
+  background-image: url("../images/a_user.png");
+}
+
+.icon-book::before {
+    height: 18px;
+    background-image: url("../images/a_book.png");
+  }
+  

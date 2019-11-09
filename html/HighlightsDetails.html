@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/layui.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/icon.css">
+
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/HighlightsDetails.css">
+    <title>要览案例详情页</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="layui-main header-main">
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item"><a href="../home.html">中国人民大学出版社</a></li>
+                <li class="layui-nav-item"><a href="">退出</a></li>
+                <li class="layui-nav-item"><a href="">APP</a></li>
+                <li class="layui-nav-item"><a href="">帮助</a></li>
+                <li class="layui-nav-item layui-form" id="select">
+                    <select name="city" lay-verify="required">
+                        <!-- <option value=""></option> -->
+                        <option value="0" selected="">简体中文</option>
+                        <option value="1">ENGLISH</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav layui-row">
+        <div class="layui-col-xs4 layui-bg-red">
+        </div>
+        <div class="layui-main nav-main">
+            <div class="layui-layout-left layui-bg-red logo">
+                <img src="../images/logo.png">
+            </div>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item"><a href="">首页</a></li>
+                <li class="layui-nav-item"><a href="">要览案例</a></li>
+                <li class="layui-nav-item"><a href="">司法案例</a></li>
+                <li class="layui-nav-item"><a href="">法律法规</a></li>
+                <li class="layui-nav-item active"><a href="">机构</a></li>
+                <li class="layui-nav-item"><a href="">人物</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="search_banner">
+        <div class="layui-main">
+            <div class="searchXs_div">
+                <div class="searchXs fl">
+                    <input type="text" class="serch_input" placeholder="请输入案由、关键词、法院、当事人、律师">
+                    <span class="btn-search layui-bg-red"><i class="iconfont">&#xe6db;</i></span>
+
+                </div>
+                <div class="btnxs fr">
+                    <button type="button" class="layui-btn layui-btn-danger">高级检索</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="term clearfix border">
+        <div class="layui-main clearfix">
+            <div class="term-content fl">
+                <div>
+                    <span class="fl bold Ft20">林殿祥挪用资金案</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-bar-full">
+        <div class="nav-bar">
+            <div class="labelC">
+                <span class="btnRed">裁判文书</span>
+                <span class="btnRed">相关法规</span>
+                <span class="btnRed">原版阅读</span>
+                <span class="btnBlue"><span class="bold">+</span> 加入对比</span>
+            </div>
+            <div class="label-right">
+                <i class="my-icon icon-print">打印</i>
+                <i class="my-icon icon-yin">引</i>
+                <i class="my-icon icon-star">星星</i>
+                <i class="my-icon icon-share">分享</i>
+            </div>
+        </div>
+    </div>
+    <div class="layui-main clearfix">
+        <div class="mainTopLeft ">
+            <div class="border">
+                <div class="border-left">
+                    <div class="lineDiv">案由：刑事> 贪污贿赂罪> 贪污罪</div>
+                    <div class="lineDiv">审理法院：福建省龙岩市中级人民法院 </div>
+                    <div class="lineDiv">司法案例：300篇</div>
+                    <div class="lineDiv">审理程序：再审</div>
+                    <div class="lineDiv">代理律所：福建津都律师事务所</div>
+                    <div class="lineDiv">指控罪名：贪污罪</div>
+                    <div class="lineDiv">终审结果：</div>
+                </div>
+                <div class="border-right">
+                    <div class="lineDiv">案由：刑事> 贪污贿赂罪> 贪污罪</div>
+                    <div class="lineDiv">审理法院：福建省龙岩市中级人民法院 </div>
+                    <div class="lineDiv">司法案例：300篇</div>
+                    <div class="lineDiv">审理程序：再审</div>
+                    <div class="lineDiv">代理律所：福建津都律师事务所</div>
+                    <div class="lineDiv">指控罪名：贪污罪</div>
+                    <div class="lineDiv">终审结果：</div>
+                </div>
+            </div>
+            <div class="chartTitleDiv">
+                <div class="faguan">
+                    <p><i class="my-icon icon-user"></i><span>法官解说</span></p>
+                </div>
+                <div class="person-faguan">
+                    <span>法官：</span><span>某某某</span><span>单位：</span><span>人民法院</span>
+
+                </div>
+                <div class="person-faguan-con">
+                    <p> 本案争论的焦点是林殿祥的行为是贪污还是挪用，是构成贪污罪还是挪用资金罪。贪污罪是指国家工作人员利用职务上的便利，侵吞、窃取、骗取或者以其他手段非法占有公共财物的行为。挪用资金罪是指非国有的公司企业或者其他单位中的不属于国家工作人员范围的人员，利用职务上的便利，挪用本单位资金归个人使用或者借贷给他人，数额较大，超过三个月未还的，或者数额较大，进行营利活动，或者进行非法活动的行为。两者在客观方面均表现利用职务上的便利，主观方面也只能是直接故意，但两者有着本质的区别：
+                        1.犯罪主体不同。贪污罪的主体必须是国家工作人员和受国家机关、国有公司、企业、事业单位或者人民团体委托，管理、经营国有财产的人员；挪用资金罪的主体只能是非国有的公司、企业或者单位中的不属于国家工作人员范围的人员。
+                    </p>
+                    <div><a href="javascript:void(0)" class="btnxs btnOpen Ft14 fr">展开</a></div>
+                </div>
+                <div class="person-content">
+                    <p class="person-title">（一）首部</p>
+                    <p>1.判决书字号</p>
+                    <p>一审判决书 ：福建省上杭县人民法院（2001）杭刑初字第83号</p>
+                    <p>二审判决书 ：<span class="c1">福建省龙岩市中级人民法院（2001）岩刑终字第185号</span></p>
+                    <p>2.案由 ：贪污案 </p>
+                    <p> 3.诉讼双方</p>
+                    <p> 被告人（上诉人）：林殿祥，男，1954年6月6日出生于福建省厦门市，汉族，高中文化，原系福建省上杭县房地产开发公司经理，住上杭县临江镇解放路143号。因本案于2001年6月9日被取保候审，同年9月18日被依法逮捕，现押于上杭县看守所。
+                    </p>
+                    <p> 辩护人：张宝发，福建津都律师事务所律师。</p>
+                    <p> 4.审级 ：二审</p>
+                    <p> 5.审判机关和审判组织</p>
+                    <p> 一审法院：</p>
+                    <p> 合议庭组成人员：审判长：王开榕；人员陪审员：梁玉梅、江泗涛。</p>
+                    <p> 二审法院：福建省龙岩市中级人民法院。</p>
+                    <p>合议庭组成人员：审判长：李英；审判员：熊焯汉、张武平。</p>
+                    <p>6.审结时间</p>
+                    <p>一审审结时间 ：2001年9月27日</p>
+                    <p> 二审审结时间 ：2001年12月27日</p>
+
+                    <p class="person-title">（二）一审情况</p>
+                    <p>1.一审诉辩主张</p>
+                    <p>（1）福建省上杭县人民检察院指控称</p>
+                    <p> 1998年3月，被告人林殿祥与上杭县房地产开发公司有关人员到龙岩市供销社车队考察房地产开发项目。同年6月26日，被告人以开发项目需前期费用为由，用上杭县房地产开发公司的名义开具内容为“兹有上杭县房地产开发总公司，因龙岩开发业务需要，欠龙岩永兴开发公司前期工程费用陆万伍仟元整。此款在新开发项目列支，于九八年拾月付清。经办人：林殿祥。证明人：张国海。九八年六月二十六日”的欠条，支取龙岩市永兴房地产开发公司65000元人民币。后因该开发项目未谈成，被告人却未将此款交回公司财务入账，而用于其个人集资、家庭等生活开支。2000年10月18日，龙岩永兴房地产开发公司向上杭县人民法庭起诉，要求归还该笔款项。被告人林殿祥欺骗公司人员，谎称1998年在龙岩市联系开发项目时欠该公司的前期费用，于2000年11月6日，指使公司财务电汇65000元人民币给龙岩永兴房地产开发公司，从中贪污。
+                    </p>  <p> 公诉机关认为被告人林殿祥的行为触犯了    </p>                                 
+                    <p class="contnet-bottom">（福建省上杭县人民检察院， 曾广兴）</p>
+                    <p>案例来源：家庭等生活开支。2000年10月18日，龙岩永兴房地产开发公司向上杭县人民法庭起诉，要求归还该笔款项。被告人林殿祥欺骗公司人员</p>
+                                     
+                    <p class="contnet-bottom">
+                        <i class="my-icon icon-book"></i>
+                        原版阅读</p>
+                </div>
+                <div class="relevant">
+                    <p class="relevant-title">相关案例<span>/ RECOMMEND</span></p>
+                </div>
+                <div class="relevant-list">
+                    <div class="relevant-item">
+                        <p class="relevant-item-title">相同法官</p>
+                        <p>[1] 石永有抢劫案</p>
+                        <p>[2] 丘建君等非法拘禁案</p>
+                        <p>[3] 石永有抢劫案</p>
+                        <p>[4] 丘建君等非法拘禁案</p>
+                        <p>[5] 石永有抢劫案</p>
+                        <p>[6] 丘建君等非法拘禁案</p>
+                        <p>[7] 石永有抢劫案</p>
+                        <p>[8] 石永有抢劫案</p>
+                        <p>[9] 丘建君等非法拘禁案</p>
+                        <p>[10] 石永有抢劫案</p>
+                    </div>
+                    <div class="relevant-item">
+                        <p class="relevant-item-title">相同法官</p>
+                        <p>[1] 石永有抢劫案</p>
+                        <p>[2] 丘建君等非法拘禁案</p>
+                        <p>[3] 石永有抢劫案</p>
+                        <p>[4] 丘建君等非法拘禁案</p>
+                        <p>[5] 石永有抢劫案</p>
+                        <p>[6] 丘建君等非法拘禁案</p>
+                        <p>[7] 石永有抢劫案</p>
+                        <p>[8] 石永有抢劫案</p>
+                        <p>[9] 丘建君等非法拘禁案</p>
+                        <p>[10] 石永有抢劫案</p>
+                    </div>
+                    <div class="relevant-item">
+                        <p class="relevant-item-title">相同法官</p>
+                        <p>[1] 石永有抢劫案</p>
+                        <p>[2] 丘建君等非法拘禁案</p>
+                        <p>[3] 石永有抢劫案</p>
+                        <p>[4] 丘建君等非法拘禁案</p>
+                        <p>[5] 石永有抢劫案</p>
+                        <p>[6] 丘建君等非法拘禁案</p>
+                        <p>[7] 石永有抢劫案</p>
+                        <p>[8] 石永有抢劫案</p>
+                        <p>[9] 丘建君等非法拘禁案</p>
+                        <p>[10] 石永有抢劫案</p>
+                    </div>
+
+                </div>
+                <div class="relevant person-content">
+                    <p class="relevant-title">延伸阅读<span>/EXTENDED READING</span></p>
+                    <p class="relevant-item-title">相关论文</p>
+                    <p>[1]论商事交易结构中合同集群的“穿透性审查”路径--以意思表示的体系化识别为视角[C]. 吴智永,徐劲草.  全国法院第29届学术讨论会获奖论文集. 2018</p>
+                    <p>[2]民法典编纂视野下违约方合同解除制度的法律规范--基于现行法的理性反思和若干典型案例的微观考察[C]. 李兆杰,牛艳.  全国法院第29届学术讨论会获奖论文集. 2018</p>
+                    <p>[3]情势变更原则适用的合理性分析--基于重新协商义务为方向[C]. 刘骥荣,陈琳.  全国法院第29届学术讨论会获奖论文集. 2018</p>
+                    <p>[4]揭去“隐身衣”：事实合同在民事审判中的开示--一个民法解释论的视角[C]. 黄洋洋.  全国法院第29届学术讨论会获奖论文集. 2018</p>
+                    <p>[5]契约自由何以确立：“私法合同”行政义务的限定--以网络服务平台审查监管责任为视角[C]. 吴林波,李芳,张飞律,戴果.  全国法院第29届学术讨论会获奖论文集. 2018</p>
+                    <p class="relevant-item-title center">+ 加载更多 </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="lnList mainTopRight" style="overflow: visible;">
+            <div class="in-lint-book">
+                <img src="../images/img.png" width="137" height="171">
+                <p>2015年刑事审判卷</p>
+            </div>
+            <div class="in-list-right">
+                <p class="relevant-title">本案法律依据<span>/BASIS</span></p>
+                <div class="tree-in-list">
+                    <p class="level1"> 《中华人民共和国刑法》</p>
+                    <p><span>     - </span>第二百七十一条第二款</p>
+                    <p><span>     -</span> 第三百八十二条第一款</p>
+                    <p><span>     -</span> 第三百八十三条第一款第（二）项</p>
+                    <p><span>     -</span> 第六十四条</p>
+                    <p class="level1"> 《中华人民共和国刑事诉讼法》</p>
+                    <p><span>     - </span>第一百八十九条第（二）项</p>
+                    <p class="level1">  《中华人民共和国刑法》</p>
+                    <p><span>     - </span>第二百七十二条第一款</p>
+                    <p><span>     -</span> 第七十二条第一款</p>
+                    <p><span>     - </span>第七十三条第二、三款</p>
+                </div>
+                <p class="relevant-item-title center btn-open">展开</p>
+            </div>
+            <div class="in-list-right">
+                <p class="relevant-title">援引指导案例<span>/RECOMMEND</span></p>
+                <div class="tree-in-list none">
+                    跟该篇裁判文书相关联的案例名称
+                </div>
+            </div>
+            <div class="in-list-right">
+                <p class="relevant-title">本案法律依据<span>/BASIS</span></p>
+                <div class="tree-in-list">
+                    <p class="level1"> 《中华人民共和国刑法》</p>
+                    <p><span>     - </span>第二百七十一条第二款</p>
+                    <p><span>     -</span> 第三百八十二条第一款</p>
+                    <p><span>     -</span> 第三百八十三条第一款第（二）项</p>
+                    <p><span>     -</span> 第六十四条</p>
+                    <p class="level1"> 《中华人民共和国刑事诉讼法》</p>
+                    <p><span>     - </span>第一百八十九条第（二）项</p>
+                    <p class="level1">  《中华人民共和国刑法》</p>
+                    <p><span>     - </span>第二百七十二条第一款</p>
+                    <p><span>     -</span> 第七十二条第一款</p>
+                    <p><span>     - </span>第七十三条第二、三款</p>
+                </div>
+                <p class="relevant-item-title center btn-open">展开</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="footer" style="margin-top: 40px;">
+        <div class="layui-main">
+            <div class="footerS clearfix">
+                <div class="footerlogo fl">
+                    <img src="../images/logo.png" alt="">
+                </div>
+                <div class="footerNav fr">
+                    <a href="">关于我们</a>
+                    <a href="">产品介绍</a>
+                    <a href="">关于<<要览>></a>
+                    <a href="">帮助中心</a>
+                    <a href="">联系我们</a>
+                </div>
+            </div>
+            <div class="footerM clearfix marginT40">
+                <div class="footerlist border">
+                    <span class="fl iconF"><i class="iconfont">&#xe602;</i></span>
+                    <div class="text">
+                        <p class="Ft20 textWhite">商务咨询：</p>
+                        <p class="Ft16 textD">010-62515610</p>
+                    </div>
+                </div>
+                <div class="footerlist border">
+                    <span class="fl iconF"><i class="iconfont">&#xe605;</i></span>
+                    <div class="text">
+                        <p class="Ft20 textWhite">商务邮箱：</p>
+                        <p class="Ft16 textD">rd100@crup.com.cn</p>
+                    </div>
+                </div>
+                <div class="footerlist border">
+                    <span class="fl iconF"><i class="iconfont">&#xe62c;</i></span>
+                    <div class="text">
+                        <p class="Ft20 textWhite">商务咨询：</p>
+                        <p class="Ft16 textD">北京市海淀区中关村大街31号</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footerM clearfix marginT40">
+                <div class="footerlist">
+                    <p class="Ft20 textWhite">相关数据库：</p>
+                    <div class="marginT20">
+                        <p class="Ft16 textD">中国思想与文化名家数据库</p>
+                        <p class="Ft16 textD">中国问题研究文献出版目录及服务平台</p>
+                    </div>
+
+                </div>
+                <div class="footerlist">
+                    <p class="Ft20 textWhite">友情链接：</p>
+                    <div class="marginT20">
+                        <p class="Ft16 textD">中国法律应用案例网</p>
+                        <p class="Ft16 textD">中国人民大学出版社</p>
+                        <p class="Ft16 textD">北京人大数字科技有限公司</p>
+
+                        <p class="Ft16 textD">国家法官学院</p>
+                        <p class="Ft16 textD">中国人民大学法学院</p>
+                    </div>
+                </div>
+                <div class="footerlist">
+                    <p class="Ft20 textWhite">关注我们：</p>
+                    <div class="marginT20">
+                        <div class="coder fl">
+                            <p><img src="../images/coder1.png" alt=""></p>
+                            <p>扫码下载app</p>
+                        </div>
+                        <div class="coder fl">
+                            <p><img src="../images/coderGZH.png" alt=""></p>
+                            <p>关注我们</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerB">
+            <span>© 2012 - 2020, RucDigt Inc. - All Rights Reserved</span>
+            <span>京ICP备12035694号-3</span>
+        </div>
+    </div>
+    <script src="../js/layui.all.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../js/echarts.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.btnOpen').click(function () {
+                console.log($(this).html())
+                if ($(this).html() == "展开") {
+                    $(this).html('收起');
+                    $(this).parent('div').prev().css("height", "200px");
+                    $(this).parent('div').prev().css("overflow", "none");
+                } else {
+                    $(this).html('展开');
+                    $(this).parent('div').prev().css("height", "126px");
+                    $(this).parent('div').prev().css("overflow", "hidden");
+                }
+
+            })
+            $('.btn-open').click(function () {
+                console.log($(this).html())
+                if ($(this).html() == "展开") {
+                    $(this).html('收起');
+                    $(this).prev('div').css("height", "auto");
+                    $(this).prev('div').css("overflow", "none");
+                } else {
+                    $(this).html('展开');
+                    $(this).prev('div').css("height", "126px");
+                    $(this).prev('div').css("overflow", "hidden");
+                }
+
+            })
+        });
+    </script>
+    <script type="text/javascript">
+
+        $(function () {
+            $('.date').click(function () {
+                $(this).closest('.lnList').find('.lnListPop').toggle()
+            })
+            $('.close').click(function () {
+                $(this).closest('.lnListPop').hide()
+            })
+            //Tab切换
+            $('.NavTab a').click(function () {
+                $('.NavTab a').removeClass('active');
+                if ($(this).html() == "法官") {
+                    $('.mainNav :first').hide();
+                    $(this).addClass('active');
+                    $('.ChartDiv').hide();
+                    $('.JudgeDiv').show();
+                    $('.caseDiv').hide();
+                } else if ($(this).html() == "统计分析") {
+                    $('.mainNav :first').show();
+                    $(this).addClass('active');
+                    $('.ChartDiv').show();
+                    $('.JudgeDiv').hide();
+                    $('.caseDiv').hide();
+                } else {
+                    $('.mainNav :first').show();
+                    $(this).addClass('active');
+                    $('.caseDiv').show();
+                    $('.JudgeDiv').hide();
+                    $('.ChartDiv').hide();
+                }
+            })
+            var Accordion = function (el, multiple) {
+                this.el = el || {};
+                this.multiple = multiple || false;
+
+                // Variables privadas
+                var links = this.el.find('.link');
+                // Evento
+                links.on('click', {
+                    el: this.el,
+                    multiple: this.multiple
+                }, this.dropdown)
+            };
+
+            Accordion.prototype.dropdown = function (e) {
+                var $el = e.data.el;
+                $this = $(this);
+                $next = $this.next();
+
+                $next.slideToggle();
+                $this.parent().toggleClass('open');
+
+                if (!e.data.multiple) {
+                    $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+                }
+            };
+
+            var accordion = new Accordion($('.accordion'), false);
+            var myChart = echarts.init(document.getElementById('main'));
+
+            option = {
+                xAxis: {
+                    name: '年份',
+                    type: 'category',
+                    data: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014]
+                },
+                tooltip: {},
+                dataZoom: [{
+                    type: 'slider',
+                    show: true,
+                    xAxisIndex: [0],
+                    left: '9%',
+                    bottom: -5
+                }],
+                yAxis: {
+                    name: '案例数量',
+                    type: 'value'
+                },
+                series: [{
+                    data: [4, 6, 18, 10, 11, 10, 11, 12, 6, 10, 12, 13, 13, 9, 7],
+                    type: 'line'
+                }]
+            };
+
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+
+
+
+            var timeChart = echarts.init(document.getElementById('time'));
+
+            optionTime = {
+                xAxis: {
+                    type: 'category',
+                    splitLine: {
+                        show: true,
+                        lineStyle: {
+                            color: ['#e5e5e5'],
+                            width: 1,
+                            type: 'dashed'
+                        }
+                    },
+                    axisLabel: {
+                        textStyle: {
+                            color: "#666"
+                        }
+                    },
+                    axisLine: {//y轴线的颜色
+                        show: true,
+                        lineStyle: {
+                            color: "#e5e5e5",
+                            type: "solid"
+                        },
+                    },
+
+                    data: ['2018/1/23', '2018/1/24', '2018/1/25', '2018/1/26', '2018/1/27', '2018/1/28']
+                },
+                legend: {
+                    icon: 'circle',
+                    left: 90,
+                    data: ['要览案例', '要览扩展案例', '指导案例']
+                },
+                tooltip: {},
+                yAxis: {
+                    type: 'value',
+                    splitLine: {
+                        show: true,
+                        lineStyle: {
+                            color: ['#eeeeee'],
+                            width: 1,
+                            type: 'solid'
+                        },
+                        color: '#e5e5e5'
+                    },
+                    axisLabel: {
+                        textStyle: {
+                            color: "#666"
+                        }
+                    },
+                    axisLine: {//y轴线的颜色
+                        show: true,
+                        lineStyle: {
+                            color: "#e5e5e5",
+                            type: "solid"
+                        },
+                    },
+                },
+
+                series: [{
+                    name: '要览案例',
+                    data: [15, 18, 15, 23, 8, 30],
+                    type: 'line',
+                    smooth: true,
+                    color: '#fb685e'
+                }, {
+                    name: '要览扩展案例',
+                    data: [24, 0, 27, 13, 20, 17],
+                    type: 'line',
+                    smooth: true,
+                    color: '#35c99d'
+                }, {
+                    name: '指导案例',
+                    data: [26, 22, 25, 18, 32, 10],
+                    type: 'line',
+                    smooth: true,
+                    color: '#57a5ea'
+                }]
+            };
+            timeChart.setOption(optionTime);
+
+            var causeChart = echarts.init(document.getElementById('cause'));
+            optionCause = {
+                tooltip: {
+                    trigger: 'item',
+                    formatter: "{b} : {c} ({d}%)"
+                },
+                legend: {
+                    orient: 'vertical',
+                    borderWidth: 1,
+                    borderRadius: 3,
+                    borderColor: '#909090',
+                    right: 'left',
+                    data: ['法院制度', '民事诉讼法', '刑事诉讼法', '侦查学与法医学', '行政诉讼法']
+                },
+                series: [
+                    {
+                        type: 'pie',
+                        radius: '90%',
+                        data: [
+                            { value: 335, name: '法院制度' },
+                            { value: 310, name: '民事诉讼法' },
+                            { value: 134, name: '刑事诉讼法' },
+                            { value: 135, name: '侦查学与法医学' },
+                            { value: 35, name: '行政诉讼法' }
+                        ],
+                        itemStyle: {
+                            emphasis: {
+                                shadowBlur: 10,
+                                shadowOffsetX: 0,
+                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            }
+                        }
+                    }
+                ]
+            };
+            causeChart.setOption(optionCause);
+
+            var JudgeChart = echarts.init(document.getElementById('judge'));
+            optionJudge = {
+                color: ['#c23531', '#2f4554', '#61a0a8'],
+                xAxis: {
+                    axisLabel: {
+                        textStyle: {
+                            color: "#666"
+                        }
+                    },
+                    axisLine: {//y轴线的颜色
+                        show: true,
+                        lineStyle: {
+                            color: "#efefef",
+                            type: "solid"
+                        },
+                    },
+
+                    type: 'category',
+                    data: ['王小妹', '李江峰', '孟小姐', '刘江红', '王晓楠', '李晓明', '王小妹', '李江峰', '孟小姐', '刘江红', '王晓楠', '李晓明', '王小妹', '李江峰']
+                },
+                tooltip: {
+                    formatter: " {c}%"
+                },
+                toolbox: {
+                    show: true,
+                    feature: {
+                        saveAsImage: {
+                            show: true,
+                            title: '下载图片',
+                            emphasis: {
+                                iconStyle: {
+                                    // color:'red',
+                                }
+                            }
+                        }
+                    }
+                },
+                yAxis: {
+                    type: 'value',
+                    axisLabel: {
+                        textStyle: {
+                            color: "#666"
+                        },
+                        formatter: '{value}%'
+                    },
+                    axisLine: {//y轴线的颜色
+                        show: true,
+                        lineStyle: {
+                            color: "#efefef",
+                            type: "solid"
+                        },
+                    },
+                    splitLine: {
+                        show: true,
+                        lineStyle: {
+                            color: ['#efefef'],
+                            width: 1,
+                            type: 'solid'
+                        },
+                        color: '#e5e5e5'
+                    }
+                },
+
+                series: [{
+                    data: [43, 22, 31, 12, 12, 31, 39, 22, 31, 12, 12, 31, 12, 31],
+                    type: 'bar',
+                    barWidth: 30,
+                    itemStyle: {
+                        normal: {
+                            //每根柱子颜色设置
+                            color: function (params) {
+                                var colorList = ['#c1def7', '#fed1ce'
+                                ];
+                                if (params.dataIndex % 2 === 0) {
+                                    return colorList[0];
+                                } else {
+                                    return colorList[1];
+                                }
+
+                            },
+                            barBorderRadius: 5,
+                            opacity: 0.6
+                        }
+                    },
+
+                }]
+            };
+
+            JudgeChart.setOption(optionJudge);
+
+            var courtChart = echarts.init(document.getElementById('court'));
+            optionCourt = {
+                tooltip: {
+                    trigger: 'item',
+                    formatter: "{b} : {c} ({d}%)"
+                },
+                legend: {
+                    orient: 'vertical',
+                    borderWidth: 1,
+                    borderRadius: 3,
+                    borderColor: '#909090',
+                    right: 'left',
+                    selected: {
+                        '北京市第五中级人民法院': false
+                    },
+                    data: ['北京市第一中级人民法院', '北京市第二中级人民法院', '北京市第三中级人民法院', '北京市第四中级人民法院', '北京市第五中级人民法院']
+                },
+                series: [
+                    {
+                        type: 'pie',
+                        radius: '90%',
+                        data: [
+                            { value: 335, name: '北京市第一中级人民法院' },
+                            { value: 310, name: '北京市第二中级人民法院' },
+                            { value: 134, name: '北京市第三中级人民法院' },
+                            { value: 135, name: '北京市第四中级人民法院' },
+                            { value: 35, name: '北京市第五中级人民法院' }
+                        ],
+                        itemStyle: {
+                            emphasis: {
+                                shadowBlur: 10,
+                                shadowOffsetX: 0,
+                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            }
+                        }
+                    }
+                ]
+            };
+            courtChart.setOption(optionCourt);
+        });
+    </script>
+</body>
+
+</html>
