@@ -1,0 +1,71 @@
+.tag{
+    font-size: 16px;
+}
+.tag .delete{
+    font-size: 20px;
+    cursor: pointer;
+}
+.layui-main>.textRed{
+    cursor: pointer;
+}
+.NavTab{
+    margin: 20px 0;
+}
+.NavTab a.active {
+    background: #BA162D;
+    color: #fff;
+}
+.NavTab a{
+    margin: 0 25px;
+    color: #666;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 25px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 5px
+}
+/* .lnListContent h3 em{
+    background: url(../images/plus.png) 16px 12px no-repeat;
+} */
+.lnListPage{
+    font-size: 14px;
+}
+.listTyC>.fr>.layui-form{
+    margin: 0 10px;
+}
+.btnxs, a.btn{
+    padding: 0 11px;
+}
+.bgBLine {
+    border: 1px solid #156fa1;
+}
+.Select .layui-input{
+    line-height: 25px;
+}
+.listTyC .text-titlelg{
+    margin-left: -30px;
+}
+.lineDiv{
+    display: flex;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.lineDiv>div{
+    margin-right: 10px;
+}
+.lineDiv>em{
+    background: url(../images/person.png) no-repeat;
+    float: left;
+    display: block;
+    width: 19px;
+    height: 16px;
+    position: absolute;
+    margin-top: 2px;
+}
+.lineDiv>em+div{
+    margin-left: 28px;
+}
+.pageM{
+    font-size: 14px;
+}

@@ -1,0 +1,137 @@
+.tag{
+    font-size: 16px;
+}
+.tag .delete{
+    font-size: 20px;
+    cursor: pointer;
+}
+.layui-main>.textRed{
+    cursor: pointer;
+}
+.NavTabar{
+    line-height: 58px;
+    background-color: #fafafa;
+    padding-left: 140px;
+}
+.NavTab{
+    margin:0;
+}
+.NavTab a.active {
+    background: #BA162D;
+    color: #fff;
+}
+.NavTab a{
+    margin: 0 70px;
+    color: #666;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 25px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 5px
+}
+.lnListPage{
+    font-size: 14px;
+}
+.listTyC>.fr>.layui-form{
+    margin: 0 10px;
+}
+.btnxs, a.btn{
+    padding: 0 11px;
+}
+.bgBLine {
+    border: 1px solid #156fa1;
+}
+.Select .layui-input{
+    line-height: 25px;
+}
+.listTyC .text-titlelg{
+    margin-left: -30px;
+}
+.lineDiv{
+    display: flex;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.lineDiv>div{
+    margin-right: 55px;
+}
+.lineDiv>em{
+    background: url(../images/person.png) no-repeat;
+    float: left;
+    display: block;
+    width: 19px;
+    height: 16px;
+    position: absolute;
+    margin-top: 2px;
+}
+.lineDiv>em+div{
+    margin-left: 28px;
+}
+.pageM{
+    font-size: 14px;
+}
+
+.nav-bar{
+    background-color: #f1f1f1;
+    height: 62px;
+}
+.nav-bar>div{
+    padding-top: 18px;
+    padding-left: 155px;
+}
+.mainTopLeft{
+    margin: 43px 0px 0px 12px;
+    width: 895px;
+    float: left;
+}
+.mainTopLeft .border{
+    padding: 0px 0px 37px 28px;
+}
+.mainTopRight{
+    width: 255px;
+    float: right;
+    height: 585px;
+    overflow: hidden;
+    margin-top: 43px;
+}
+.ChartDiv{
+    /* height: 1200px; */
+}
+.chartTitleDiv{
+    padding: 35px 0px 40px 28px;
+}
+.chartTitle{
+    font-size: 18px;
+    color: #04659a;
+    font-weight: 600;
+}
+.mainContentChart{
+    height: 560px;
+}
+.mainContentChart .btnDiv{
+    padding: 45PX 0 60PX 60px
+}
+.mainContentChart .title{
+    padding: 30px 60px;
+}
+.mainContentChart .title span{
+    font-size: 12px;
+}
+.mainContentChart .btnBlue{
+    font-size: 16px;
+    padding: 0 28px;
+    line-height: 25px;
+}
+.bgbtn {
+    border: 1px solid #cbdde7;
+    color: #156fa1;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 28px;
+    line-height: 25px;
+}
+.bgbtn:hover{
+    background: #04659a;
+    color: #fff;
+}

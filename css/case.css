@@ -1,0 +1,34 @@
+.listTyC.listTyClg {
+    width: 95%;
+    margin-left: 0px;
+  }
+  .listTyC {
+    width: 90%;
+    margin-left: 0px;
+  }
+  .listTyC span.iconfont{
+    margin-left: 8px;
+  }
+  .listTy{
+    padding-bottom: 21px;
+  }
+  .bgbtn{
+    border: 1px solid #cbdde7;
+    color: #156fa1;
+  }
+  .text-content{
+      border:1px solid #efc0c7;
+      font-size: 16px;
+      padding: 18px 30px 38px 22px ;
+      background-color: #fcf9f9;
+      margin-top: 20px;
+  }
+  .text-content p{
+    height: 52px;
+    overflow: hidden;
+  }
+  .btnOpen{
+      background-color: #f7e2e5;
+      color: #cb5163;
+      border:none;
+  }

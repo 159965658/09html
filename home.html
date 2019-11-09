@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/layui.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <title>中国审判案例数据库</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="layui-main header-main">
+        <ul class="layui-nav layui-layout-right">
+          <li class="layui-nav-item"><a href="home.html">中国人民大学出版社</a></li>
+          <li class="layui-nav-item"><a href="">退出</a></li>
+          <li class="layui-nav-item"><a href="">APP</a></li>
+          <li class="layui-nav-item"><a href="">帮助</a></li>
+          <li class="layui-nav-item layui-form" id="select">
+            <select name="city" lay-verify="required">
+              <!-- <option value=""></option> -->
+              <option value="0" selected="">简体中文</option>
+              <option value="1">ENGLISH</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav layui-row">
+      <div class="layui-col-xs4 layui-bg-red">
+      </div>
+      <div class="layui-main nav-main">
+        <div class="layui-layout-left layui-bg-red logo">
+          <img src="./images/logo.png">
+        </div>
+        <ul class="layui-nav layui-layout-right">
+          <li class="layui-nav-item active"><a href="">首页</a></li>
+          <li class="layui-nav-item"><a href="">要览案例</a></li>
+          <li class="layui-nav-item"><a href="">司法案例</a></li>
+          <li class="layui-nav-item"><a href="">法律法规</a></li>
+          <li class="layui-nav-item"><a href="">机构</a></li>
+          <li class="layui-nav-item"><a href="">人物</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="layui-main">
+        <div class="banner_text">
+          <img src="images/bannerText.png" alt="">
+          <div class="search_div">
+            <div class="search fl">
+              <input type="text" class="serch_input" placeholder="请输入案由、关键词、法院、当事人、律师">
+              <a class="btn-search layui-bg-red"><i class="iconfont">&#xe6db;</i></a>
+            </div>
+            <div class="btn fr">
+              <button type="button"  onclick="window.location.href = 'search/search-null.html'"class="layui-btn layui-btn-danger">高级检索</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="content clearfix">
+      <div class="layui-main">
+        <div class="content-header clearfix">
+          <div class="title fl">精选案例<span>/recommend</span></div>
+          <a href="" class="more fr">更多>></a>
+        </div>
+        <div class="index-cen marginT20">
+          <div class="couse-tab layui-bg-red">
+            <ul class="couse-bnt ">
+              <li class="active">刑事</li>
+              <li>民事</li>
+              <li>商事</li>
+              <li>行政</li>
+              <li>知识产权</li>
+              <li>执行</li>
+              <li>国家赔偿</li>
+            </ul>
+          </div>
+          <div class="datails-tab-cen" style="display: block;">
+            <div class="listAl">
+              <ul class="">
+                <li class="listC list-red">
+                  <a href="">
+                    <div class="listBg listBgR"></div>
+                    <div class="listT textWhite">
+                      <p>***诉江苏润扬交通工程集团有限公司地面施工损害责任...</p>
+                      <p>(施工人的安全注意义务）</p>
+                    </div>
+                    <div class="listH textWhite">
+                      <div class="listH_T">***诉江苏润扬交通工程集团有限公司地面施工损害责任...</div>
+                      <div class="listH_b"><i class="icon"></i>梁嘉<span>北京市大兴区人民法院</span></div>
+                    </div>
+                  </a>
+
+                </li>
+                <li class="listC list-blue">
+                  <a href="">
+                    <div class="listBg listBgR"></div>
+                    <div class="listLabel">独家</div>
+                    <div class="listT textWhite">
+                      <p>***诉江苏润扬交通工程集团有限公司地面施工损害责任地面施工损害责任地面施工损害责任地面施工损害责任</p>
+                    </div>
+                    <div class="listH textWhite">
+                      <div class="listH_T">***诉江苏润扬交通工程集团有限公司地面施工损害责任...</div>
+                      <div class="listH_b"><i class="icon"></i>梁嘉<span>北京市大兴区人民法院</span></div>
+                    </div>
+                  </a>
+                </li>
+                <li class="listC">
+                  <a href="">
+                    <div class="listBg listBgL"></div>
+                    <div class="listLabel">独家</div>
+                    <div class="listT">
+                      <p>***诉江苏润扬交通工程集团有限公司地面施工损害责任...</p>
+                      <p>(施工人的安全注意义务）</p>
+                    </div>
+                    <div class="listH">
+                      <div class="listH_T">***诉江苏润扬交通工程集团有限公司地面施工损害责任...</div>
+                      <div class="listH_b"><i class="icon"></i>梁嘉<span>北京市大兴区人民法院</span></div>
+                    </div>
+                  </a>
+                </li>
+                <li class="listC">
+                  <a href="">
+                    <div class="listBg listBgL"></div>
+                    <div class="listT">
+                      <p>***诉江苏润扬交通工程集团有限公司地面施工损害责任...</p>
+                      <p>(施工人的安全注意义务）</p>
+                    </div>
+                    <div class="listH">
+                      <div class="listH_T">***诉江苏润扬交通工程集团有限公司地面施工损害责任...</div>
+                      <div class="listH_b"><i class="icon"></i>梁嘉<span>北京市大兴区人民法院</span></div>
+                    </div>
+                    <div class="listH">
+                      <div class="listH_T">***诉江苏润扬交通工程集团有限公司地面施工损害责任...</div>
+                      <div class="listH_b"><i class="icon"></i>梁嘉<span>北京市大兴区人民法院</span></div>
+                    </div>
+                  </a>
+                </li>
+                <li class="listC">
+                  <a href="">
+                    <div class="listBg listBgL"></div>
+                    <div class="listT">
+                      <p>***诉江苏润扬交通工程集团有限公司地面施工损害责任...</p>
+                      <p>(施工人的安全注意义务）</p>
+                    </div>
+                    <div class="listH">
+                      <div class="listH_T">***诉江苏润扬交通工程集团有限公司地面施工损害责任...</div>
+                      <div class="listH_b"><i class="icon"></i>梁嘉<span>北京市大兴区人民法院</span></div>
+                  </div>
+                  </a>
+                </li>
+                <li class="listC">
+                  <a href="">
+                    <div class="listBg listBgL"></div>
+                    <div class="listT">
+                      <p>***诉江苏润扬交通工程集团有限公司地面施工损害责任...</p>
+                      <p>(施工人的安全注意义务）</p>
+                    </div>
+                    <div class="listH">
+                      <div class="listH_T">***诉江苏润扬交通工程集团有限公司地面施工损害责任...</div>
+                      <div class="listH_b"><i class="icon"></i>梁嘉<span>北京市大兴区人民法院</span></div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="content clearfix layui-bg-gray">
+      <div class="layui-main">
+        <div class="content-header clearfix">
+          <div class="title fl">法官观点<span>/Judge's Views</span></div>
+          <a href="" class="more fr">更多>></a>
+        </div>
+        <div class="swiper-container home-swiper">
+          <div class="swiper-content box-shadow">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide clearfix">
+                <div class="swiperLeft fl box-shadow">
+                  <div class="swiperLeftC clearfix">
+                    <div class="icon fl"><i class="iconfont">&#xe64c;</i></div>
+                    <div class="swiperLeftCL fl">
+                      <div class="text-title">杭州恒生网络技术服务有限公司杭州恒生网络技术服务有限公司</div>
+                      <div class="text-df">陈黄佳 广东省汕头市潮阳人民法院</div>
+                      <div class="text-zw">本案争论的焦点是林殿祥的行为是贪污还是挪用，是构成贪污罪还是挪用资金罪。贪污罪是指国家工作人员利用职务上的便利，侵吞、窃取、骗取或者以其他手段非法占有公共财物的行为。挪用资金罪是指非国有的公司企...</div>
+                    </div>
+                  </div>
+                  <div class="layui-bg-blue swiperLeftLabel">
+                    <div class="icon fl"><i class="iconfont">&#xe699;</i></div>
+                    <div class="swiperLeftCL fl">
+                      <span>军地互涉</span>
+                      <span>管辖</span>
+                      <span>共同犯罪</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiperRight fl">
+                  <div class="listTy clearfix">
+                    <div class="icon fl"><i class="iconfont">&#xe64c;</i></div>
+                    <div class="listTyC fl">
+                      <div class="listTyCT">
+                        <div class="text-title text-el">杭州恒生网络技术服务有限公司杭州恒生网络技术服务有限公司</div>
+                        <div class="text-df">陈黄佳 广东省汕头市潮阳人民法院</div>
+                      </div>
+                      <div class="text-zw">本案的争议焦点在于四名行为人是否构成<span class="textRed">共同犯罪</span>以及各自的涉案金额。一种观点认为，四名行为人施犯罪行为之前就具有共同犯罪的预谋，且几人并...
+                      </div>
+                      <div class="labelC"><span class="label">数罪并罚</span><span class="label">数罪并罚</span><span class="label">数罪并罚</span></div>
+                    </div>
+                  </div>
+                  <div class="listTy clearfix">
+                    <div class="icon fl"><i class="iconfont">&#xe64c;</i></div>
+                    <div class="listTyC fl">
+                      <div class="listTyCT">
+                        <div class="text-title text-el">杭州恒生网络技术服务有限公司杭州恒生网络技术服务有限公司</div>
+                        <div class="text-df">陈黄佳 广东省汕头市潮阳人民法院</div>
+                      </div>
+                      <div class="text-zw">本案的争议焦点在于四名行为人是否构成<span class="textRed">共同犯罪</span>以及各自的涉案金额。一种观点认为，四名行为人施犯罪行为之前就具有共同犯罪的预谋，且几人并...
+                      </div>
+                      <div class="labelC"><span class="label">数罪并罚</span><span class="label">数罪并罚</span><span class="label">数罪并罚</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide clearfix">
+                <div class="swiperLeft fl">
+                  <div class="swiperLeftC clearfix">
+                    <div class="icon fl"><i class="iconfont">&#xe64c;</i></div>
+                    <div class="swiperLeftCL fl">
+                      <div class="text-title">杭州恒生网络技术服务有限公司杭州恒生网络技术服务有限公司</div>
+                      <div class="text-df">陈黄佳 广东省汕头市潮阳人民法院</div>
+                      <div class="text-zw">本案争论的焦点是林殿祥的行为是贪污还是挪用，是构成贪污罪还是挪用资金罪。贪污罪是指国家工作人员利用职务上的便利，侵吞、窃取、骗取或者以其他手段非法占有公共财物的行为。挪用资金罪是指非国有的公司企...</div>
+                    </div>
+                  </div>
+                  <div class="layui-bg-blue swiperLeftLabel">
+                    <div class="icon fl"><i class="iconfont">&#xe699;</i></div>
+                    <div class="swiperLeftCL fl">
+                      <span>军地互涉</span>
+                      <span>管辖</span>
+                      <span>共同犯罪</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiperRight fl">
+                  <div class="listTy clearfix">
+                    <div class="icon fl"><i class="iconfont">&#xe64c;</i></div>
+                    <div class="listTyC fl">
+                      <div class="listTyCT">
+                        <div class="text-title text-el">杭州恒生网络技术服务有限公司杭州恒生网络技术服务有限公司</div>
+                        <div class="text-df">陈黄佳 广东省汕头市潮阳人民法院</div>
+                      </div>
+                      <div class="text-zw">本案的争议焦点在于四名行为人是否构成<span class="textRed">共同犯罪</span>以及各自的涉案金额。一种观点认为，四名行为人施犯罪行为之前就具有共同犯罪的预谋，且几人并...
+                      </div>
+                      <div class="labelC"><span class="label">数罪并罚</span><span class="label">数罪并罚</span><span class="label">数罪并罚</span></div>
+                    </div>
+                  </div>
+                  <div class="listTy clearfix">
+                    <div class="icon fl"><i class="iconfont">&#xe64c;</i></div>
+                    <div class="listTyC fl">
+                      <div class="listTyCT">
+                        <div class="text-title text-el">杭州恒生网络技术服务有限公司杭州恒生网络技术服务有限公司</div>
+                        <div class="text-df">陈黄佳 广东省汕头市潮阳人民法院</div>
+                      </div>
+                      <div class="text-zw">本案的争议焦点在于四名行为人是否构成<span class="textRed">共同犯罪</span>以及各自的涉案金额。一种观点认为，四名行为人施犯罪行为之前就具有共同犯罪的预谋，且几人并...
+                      </div>
+                      <div class="labelC"><span class="label">数罪并罚</span><span class="label">数罪并罚</span><span class="label">数罪并罚</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Arrows -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content clearfix">
+      <div class="layui-main">
+        <div class="content-header clearfix">
+          <div class="title fl">法官风采<span>/udge's demeanor</span></div>
+          <a href="" class="more fr">更多>></a>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper-container swiper-FGcontainer" style="height: 520px;">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide FGList FGList-bgred">
+              <div class="FGlistBg FGlistBgR"></div>
+              <div class="listT textWhite">
+                <p class="Ft24 bold">法官：徐宁</p>
+                <p class="Ft16">单位：北京市第一中级人民法院</p>
+                <div class="line"><span></span></div>
+                <p class="Ft20">共收录要览案例30篇，司法案例16330篇。审判案例要览入选全国排名：第1名</p>
+              </div>
+            </div>
+            <div class="swiper-slide FGList">
+              <div class="FGlistBg"></div>
+              <div class="listT">
+                <p class="Ft24 bold"><span class="textBlue">法官：</span><span class="textRed">徐宁</span></p>
+                <p class="Ft16">单位：北京市第一中级人民法院</p>
+                <div class="line"><span></span></div>
+                <p class="Ft20">共收录要览案例30篇，司法案例16330篇。审判案例要览入选全国排名：第1名</p>
+              </div>
+            </div>
+            <div class="swiper-slide FGList">
+              <div class="FGlistBg FGlistBgR"></div>
+              <div class="listT">
+                <p class="Ft24 bold"><span class="textBlue">法官：</span><span class="textRed">徐宁</span></p>
+                <p class="Ft16">单位：北京市第一中级人民法院</p>
+                <div class="line"><span></span></div>
+                <p class="Ft20">共收录要览案例30篇，司法案例16330篇。审判案例要览入选全国排名：第1名</p>
+              </div>
+            </div>
+            <div class="swiper-slide FGList">
+              <div class="FGlistBg FGlistBgR"></div>
+              <div class="listT">
+                <p class="Ft24 bold"><span class="textBlue">法官：</span><span class="textRed">徐宁</span></p>
+                <p class="Ft16">单位：北京市第一中级人民法院</p>
+                <div class="line"><span></span></div>
+                <p class="Ft20">共收录要览案例30篇，司法案例16330篇。审判案例要览入选全国排名：第1名</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+        </div>
+      </div>
+    </div>
+    <div class="content clearfix layui-bg-gray">
+      <div class="layui-main clearfix">
+        <div class="W540 fl">
+          <div class="content-header clearfix">
+            <div class="title fl">图书<span>/books</span></div>
+            <a href="" class="more fr">更多>></a>
+          </div>
+          <div class="bookContent box-shadow clearfix">
+            <ul>
+              <li>
+                <a href="">
+                  <div><img src="./images/img.png" alt=""></div>
+                  <p>2015年刑事审判卷</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div><img src="./images/img.png" alt=""></div>
+                  <p>2015年刑事审判卷</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div><img src="./images/img.png" alt=""></div>
+                  <p>2015年刑事审判卷</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div><img src="./images/img.png" alt=""></div>
+                  <p>2015年刑事审判卷</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="W610 fr">
+          <div class="content-header clearfix">
+            <div class="title fl">法律法规<span>/Laws and regulations</span></div>
+            <a href="" class="more fr">更多>></a>
+          </div>
+          <div class="marginT30">
+            <div class="lawList">
+              <a href="">
+                <p class="textBlue bold Ft18">中华人民共和国刑法（2004修订）</p>
+                <p class="textGrey">现行有效/中华人民共和国主席令第30号/2019.06.29发布/2019.12.01实施</p>
+                <p class="Ft14">相关案例：<span class="textBlue">180篇</span></p>
+              </a>
+            </div>
+            <div class="lawList">
+              <a href="">
+                <p class="textBlue bold Ft18">中华人民共和国刑法（2004修订）</p>
+                <p class="textGrey">现行有效/中华人民共和国主席令第30号/2019.06.29发布/2019.12.01实施</p>
+                <p class="Ft14">相关案例：<span class="textBlue">180篇</span></p>
+              </a>
+            </div>
+            <div class="lawList">
+              <a href="">
+                <p class="textBlue bold Ft18">中华人民共和国刑法（2004修订）</p>
+                <p class="textGrey">现行有效/中华人民共和国主席令第30号/2019.06.29发布/2019.12.01实施</p>
+                <p class="Ft14">相关案例：<span class="textBlue">180篇</span></p>
+              </a>
+            </div>
+            <div class="lawList">
+              <a href="">
+                <p class="textBlue bold Ft18">中华人民共和国刑法（2004修订）</p>
+                <p class="textGrey">现行有效/中华人民共和国主席令第30号/2019.06.29发布/2019.12.01实施</p>
+                <p class="Ft14">相关案例：<span class="textBlue">180篇</span></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content clearfix">
+      <div class="layui-main">
+        <div class="content-header clearfix">
+          <div class="title fl">地域导航<span>/Area navigation</span></div>
+          <a href="" class="more fr">更多>></a>
+        </div>
+        <div class="marginT30 clearfix">
+          <div class="map fl">
+            <img src="images/map.png" alt="">
+          </div>
+          <div class="mapTab fl">
+              <div class="maptabBtn">
+                <ul class="tab-bnt">
+                  <li class="active">法院</li>
+                  <li>律所</li>
+                </ul>
+              </div>
+              <div class="datails-tab" style="display: block;">
+                <div class="tabList">
+                  <a href="">
+                    <p class="Ft16 textBlue">北京市高级人民法院</p>
+                    <p class="Ft12 textF9">入选要览案例总量：800篇</p>
+                  </a>                  
+                </div>
+                <div class="tabList">
+                  <a href="">
+                    <p class="Ft16 textBlue">北京市高级人民法院</p>
+                    <p class="Ft12 textF9">入选要览案例总量：800篇</p>
+                  </a>                  
+                </div>
+                <div class="tabList">
+                  <a href="">
+                    <p class="Ft16 textBlue">北京市高级人民法院</p>
+                    <p class="Ft12 textF9">入选要览案例总量：800篇</p>
+                  </a>                  
+                </div>
+                <div class="tabList">
+                  <a href="">
+                    <p class="Ft16 textBlue">北京市高级人民法院</p>
+                    <p class="Ft12 textF9">入选要览案例总量：800篇</p>
+                  </a>                  
+                </div>
+                <div class="tabList">
+                  <a href="">
+                    <p class="Ft16 textBlue">北京市高级人民法院</p>
+                    <p class="Ft12 textF9">入选要览案例总量：800篇</p>
+                  </a>                  
+                </div>
+                <div class="tabList">
+                  <a href="">
+                    <p class="Ft16 textBlue">北京市高级人民法院</p>
+                    <p class="Ft12 textF9">入选要览案例总量：800篇</p>
+                  </a>                  
+                </div>
+                <div class="tabList">
+                  <a href="">
+                    <p class="Ft16 textBlue">北京市高级人民法院</p>
+                    <p class="Ft12 textF9">入选要览案例总量：800篇</p>
+                  </a>                  
+                </div>
+                <div class="page"> 
+                  <a href="" class="iconfont">&#xe64d;</a>
+                  <a href="javascript:;" class="btn">上一页</a>
+                  <a href="javascript:;" class="btn">下一页</a>
+                  <a href="" class="iconfont">&#xe617;</a>
+                </div>
+              </div>
+               <div class="datails-tab" style="display: none;">
+                 111
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="layui-main"> 
+        <div class="footerS clearfix">
+          <div class="footerlogo fl">
+            <img src="images/logo.png" alt="">
+          </div>
+          <div class="footerNav fr">
+            <a href="">关于我们</a>
+            <a href="">产品介绍</a>
+            <a href="">关于<<要览>></a>
+            <a href="">帮助中心</a>
+            <a href="">联系我们</a>
+          </div>
+        </div>
+        <div class="footerM clearfix marginT40">
+          <div class="footerlist border">
+            <span class="fl iconF"><i class="iconfont">&#xe602;</i></span>
+            <div class="text">
+              <p class="Ft20 textWhite">商务咨询：</p>
+              <p class="Ft16 textD">010-62515610</p>
+            </div>
+          </div>
+          <div class="footerlist border">
+            <span class="fl iconF"><i class="iconfont">&#xe605;</i></span>
+            <div class="text">
+              <p class="Ft20 textWhite">商务邮箱：</p>
+              <p class="Ft16 textD">rd100@crup.com.cn</p>
+            </div>
+          </div>
+          <div class="footerlist border">
+            <span class="fl iconF"><i class="iconfont">&#xe62c;</i></span>
+            <div class="text">
+              <p class="Ft20 textWhite">商务咨询：</p>
+              <p class="Ft16 textD">北京市海淀区中关村大街31号</p>
+            </div>
+          </div>
+        </div>
+        <div class="footerM clearfix marginT40">
+          <div class="footerlist">
+              <p class="Ft20 textWhite">相关数据库：</p>
+              <div class="marginT20">
+                <p class="Ft16 textD">中国思想与文化名家数据库</p>
+                <p class="Ft16 textD">中国问题研究文献出版目录及服务平台</p>
+              </div>
+              
+          </div>
+          <div class="footerlist">
+              <p class="Ft20 textWhite">友情链接：</p>
+              <div class="marginT20">
+                <p class="Ft16 textD">中国法律应用案例网</p>
+                <p class="Ft16 textD">中国人民大学出版社</p>
+                <p class="Ft16 textD">北京人大数字科技有限公司</p>
+                
+                <p class="Ft16 textD">国家法官学院</p>
+                <p class="Ft16 textD">中国人民大学法学院</p>
+              </div>              
+          </div>
+          <div class="footerlist">
+              <p class="Ft20 textWhite">关注我们：</p>
+              <div class="marginT20">
+                <div class="coder fl">
+                  <p><img src="images/coder1.png" alt=""></p>
+                  <p>扫码下载app</p>
+                </div>
+                <div class="coder fl">
+                  <p><img src="images/coderGZH.png" alt=""></p>
+                  <p>关注我们</p>
+                </div>
+              </div>              
+          </div>
+        </div>
+      </div>
+      <div class="footerB">
+        <span>© 2012 - 2020, RucDigt Inc. - All Rights Reserved</span>
+        <span>京ICP备12035694号-3</span>                   
+      </div>
+    </div>
+  </body>
+  <script src="./js/layui.all.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/public.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-content', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    var swiper1 = new Swiper('.swiper-FGcontainer', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+      $(function(){
+            tabs(".tab-bnt",".datails-tab")
+        })
+  </script>
+</html>

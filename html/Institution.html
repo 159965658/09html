@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/layui.css">
+  <link rel="stylesheet" href="../css/iconfont.css">
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/Institution.css">
+  <title>中国审判案例数据库</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="layui-main header-main">
+      <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item"><a href="../home.html">中国人民大学出版社</a></li>
+        <li class="layui-nav-item"><a href="">退出</a></li>
+        <li class="layui-nav-item"><a href="">APP</a></li>
+        <li class="layui-nav-item"><a href="">帮助</a></li>
+        <li class="layui-nav-item layui-form" id="select">
+          <select name="city" lay-verify="required">
+            <!-- <option value=""></option> -->
+            <option value="0" selected="">简体中文</option>
+            <option value="1">ENGLISH</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="nav layui-row">
+    <div class="layui-col-xs4 layui-bg-red">
+    </div>
+    <div class="layui-main nav-main">
+      <div class="layui-layout-left layui-bg-red logo">
+        <img src="../images/logo.png">
+      </div>
+      <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item"><a href="">首页</a></li>
+        <li class="layui-nav-item"><a href="">要览案例</a></li>
+        <li class="layui-nav-item"><a href="">司法案例</a></li>
+        <li class="layui-nav-item"><a href="">法律法规</a></li>
+        <li class="layui-nav-item active"><a href="">机构</a></li>
+        <li class="layui-nav-item"><a href="">人物</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="search_banner">
+    <div class="layui-main">
+      <div class="searchXs_div">
+        <div class="searchXs fl">
+          <input type="text" class="serch_input" placeholder="请输入案由、关键词、法院、当事人、律师">
+          <span class="btn-search layui-bg-red"><i class="iconfont">&#xe6db;</i></span>
+
+        </div>
+        <div class="btnxs fr">
+          <button type="button" class="layui-btn layui-btn-danger">高级检索</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="term clearfix border">
+    <div class="layui-main clearfix">
+      <div class="term-content fl">
+        检索条件：<span class="tag">案由：刑事<i class="iconfont delete">&#xe603;</i></span><span class="tag">参照级别：指导案例<i
+            class="iconfont delete">&#xe603;</i></span>
+      </div>
+      <span class="textRed Ft18 fr"><i class="iconfont Ft24 clearIcon">&#xe612;</i>清空</span>
+    </div>
+
+  </div>
+  <div class="main marginT5">
+    <div class="layui-main clearfix">
+      <div class="NavTab">
+        <a href="javascript:void(0)" class="active">法院</a>
+        <a href="javascript:void(0)">律所</a>
+      </div>
+      <div class="mainNav">
+        <div class="lnList">
+
+          <div class="lnListTop">
+            <div class="title fl">法院级别<span>/ COURT</span></div>
+            <span class="layui-nav-more"></span>
+          </div>
+          <div class="lnListContent">
+            <ul class="sideMenu">
+              <li>
+                <h3 class="link">最高人民法院 <span>9292</span></h3>
+              </li>
+              <li>
+                <h3 class="link">高级人民法院 <span>8686</span></h3>
+              </li>
+              <li>
+                <h3 class="link">中级人民法院<span>100</span></h3>
+              </li>
+              <li>
+                <h3 class="link">基层人民法院 <span>3699</span></h3>
+              </li>
+              <li>
+                <h3 class="link">专门人民法院 <span>5600</span></h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="lnList">
+          <div class="lnListTop">
+            <div class="title fl">地域<span>/REGION </span></div>
+            <span class="layui-nav-more"></span>
+          </div>
+          <div class="lnListContent">
+            <ul class="sideMenu accordion" id="">
+              <li>
+                <h3 class="link">最高人民法院 <span>9292</span></h3>
+              </li>
+              <li>
+                <h3 class="link"><em></em>北京市 <span>8686</span></h3>
+                <ul class="sideMenu">
+                  <li>
+                    <h3 class="link">北京市<span>100</span></h3>
+                  </li>
+                  <li>
+                    <h3 class="link">北京市<span>100</span></h3>
+                  </li>
+                </ul>
+              <li>
+              <li>
+                <h3 class="link"><em></em>天津市 <span>100</span></h3>
+                <ul class="sideMenu">
+                  <li>
+                    <h3 class="link">天津市<span>100</span></h3>
+                  </li>
+                  <li>
+                    <h3 class="link">天津市<span>100</span></h3>
+                  </li>
+                </ul>
+              <li>
+              <li>
+                <h3 class="link"><em></em>上海市<span>3699</span></h3>
+                <ul class="sideMenu">
+                  <li>
+                    <h3 class="link">上海市<span>3699</span></h3>
+                  </li>
+                  <li>
+                    <h3 class="link">上海市<span>3699</span></h3>
+                  </li>
+                </ul>
+              <li>
+              <li>
+              <li>
+                <h3 class="link"><em></em>重庆市<span>5600</span></h3>
+                <ul class="sideMenu">
+                  <li>
+                    <h3 class="link">重庆市<span>5600</span></h3>
+                  </li>
+                  <li>
+                    <h3 class="link">重庆市<span>5600</span></h3>
+                  </li>
+                </ul>
+              <li>
+              <li>
+              <li>
+                <h3 class="link"><em></em>河北省<span>9292</span></h3>
+                <ul class="sideMenu">
+                  <li>
+                    <h3 class="link">河北省<span>9292</span></h3>
+                  </li>
+                  <li>
+                    <h3 class="link">河北省<span>9292</span></h3>
+                  </li>
+                </ul>
+              <li>
+              <li>
+                <h3 class="link"><em></em>陕西省<span>8686</span></h3>
+                <ul class="sideMenu">
+                  <li>
+                    <h3 class="link">陕西省<span>8686</span></h3>
+                  </li>
+                  <li>
+                    <h3 class="link">陕西省<span>8686</span></h3>
+                  </li>
+                </ul>
+              <li>
+              <li>
+              <li>
+                <h3 class="link"><em></em>山西省<span>100</span></h3>
+                <ul class="sideMenu">
+                  <li>
+                    <h3 class="link">山西省<span>100</span></h3>
+                  </li>
+                  <li>
+                    <h3 class="link">山西省<span>100</span></h3>
+                  </li>
+                </ul>
+              <li>
+              <li>
+              <li>
+                <h3 class="link"><em></em>内蒙古自治区<span>3699</span></h3>
+                <ul class="sideMenu">
+                  <li>
+                    <h3 class="link">内蒙古自治区<span>3699</span></h3>
+                  </li>
+                  <li>
+                    <h3 class="link">内蒙古自治区<span>3699</span></h3>
+                  </li>
+                </ul>
+              <li>
+              <li>
+                <h3 class="link"><em></em>吉林省 <span>5600</span></h3>
+
+                <ul class="sideMenu">
+                  <li>
+                    <h3 class="link">吉林省<span>5600</span></h3>
+                  </li>
+                  <li>
+                    <h3 class="link">吉林省<span>5600</span></h3>
+                  </li>
+                </ul>
+              <li>
+          </div>
+          <div class="lnListPage">
+            <span>1/9</span>
+            <a href="">上一页</a>
+            <a href="">下一页</a>
+            <a href="">全部</a>
+          </div>
+        </div>
+      </div>
+      <div class="mainRight">
+        <div class="mainContent">
+          <div class="listTy P30 clearfix ">
+            <div class="icon fl"><input type="checkbox" name="" title=""></div>
+            <div class="listTyC fl listTyClg">
+              <span>全选</span>
+              <a href="" class="btnxs bgBlue">对比</a>
+              <a href="" class="btnxs bgBLine"><i class="iconfont">&#xe7f2;</i>导出</a>
+              <div class="fr">
+                <div class="textXh fl result">
+                  共检索到61389个结果
+                </div>
+                <div class="layui-form Select fl W132">
+                  <select name="city" lay-verify="required">
+                    <!-- <option value=""></option> -->
+                    <option value="0" selected="">按相关度排序</option>
+                    <option value="1">按相关度排序</option>
+                  </select>
+                </div>
+                <div class="layui-form Select fl W60">
+                  <select name="city" lay-verify="required">
+                    <!-- <option value=""></option> -->
+                    <option value="0" selected="">10</option>
+                    <option value="1">9</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="list_content">
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、最高人民法院</a><span class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>法官：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、最高人民法院</a><span class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>法官：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、最高人民法院</a><span class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>法官：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、最高人民法院</a><span class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>法官：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、最高人民法院</a><span class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>法官：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、最高人民法院</a><span class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>法官：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、最高人民法院</a><span class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>法官：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、最高人民法院</a><span class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>法官：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="list_contentLaw">
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、上海市联合律师事务所</a><span
+                        class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>律师：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、上海市联合律师事务所</a><span
+                        class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>律师：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、上海市联合律师事务所</a><span
+                        class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>律师：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、上海市联合律师事务所</a><span
+                        class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>律师：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、上海市联合律师事务所</a><span
+                        class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>律师：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listTy P30 clearfix ">
+              <div class="icon fl"><input type="checkbox" name="" title=""></div>
+              <div class="listTyC fl listTyClg">
+                <div class="marginL25">
+                  <div class="listTyCT">
+                    <div class="text-titlelg text-el"><a href="">1、上海市联合律师事务所</a><span
+                        class="iconfont fr">&#xe616;</span>
+                    </div>
+                  </div>
+                  <div class="lineDiv">
+                    <div>要览案例：<span class="textRed">20</span></div>
+                    <div>司法案例：<span class="textRed">300</span></div>
+                  </div>
+                  <div class="lineDiv">
+                    <em></em>
+                    <div>律师：<span class="textRed">20</span> 位</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pageM">
+            <span>页数 1/10</span>
+            <a href="">首页</a>
+            <a href="">上一页</a>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">...</a>
+            <a href="">10</a>
+            <a href="">下一页</a>
+            <a href="">尾页</a>
+            <span>至</span>
+            <input type="text">
+            <span>页</span>
+            <a href="" class="btn">确定</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="layui-main">
+      <div class="footerS clearfix">
+        <div class="footerlogo fl">
+          <img src="../images/logo.png" alt="">
+        </div>
+        <div class="footerNav fr">
+          <a href="">关于我们</a>
+          <a href="">产品介绍</a>
+          <a href="">关于<<要览>></a>
+          <a href="">帮助中心</a>
+          <a href="">联系我们</a>
+        </div>
+      </div>
+      <div class="footerM clearfix marginT40">
+        <div class="footerlist border">
+          <span class="fl iconF"><i class="iconfont">&#xe602;</i></span>
+          <div class="text">
+            <p class="Ft20 textWhite">商务咨询：</p>
+            <p class="Ft16 textD">010-62515610</p>
+          </div>
+        </div>
+        <div class="footerlist border">
+          <span class="fl iconF"><i class="iconfont">&#xe605;</i></span>
+          <div class="text">
+            <p class="Ft20 textWhite">商务邮箱：</p>
+            <p class="Ft16 textD">rd100@crup.com.cn</p>
+          </div>
+        </div>
+        <div class="footerlist border">
+          <span class="fl iconF"><i class="iconfont">&#xe62c;</i></span>
+          <div class="text">
+            <p class="Ft20 textWhite">商务咨询：</p>
+            <p class="Ft16 textD">北京市海淀区中关村大街31号</p>
+          </div>
+        </div>
+      </div>
+      <div class="footerM clearfix marginT40">
+        <div class="footerlist">
+          <p class="Ft20 textWhite">相关数据库：</p>
+          <div class="marginT20">
+            <p class="Ft16 textD">中国思想与文化名家数据库</p>
+            <p class="Ft16 textD">中国问题研究文献出版目录及服务平台</p>
+          </div>
+
+        </div>
+        <div class="footerlist">
+          <p class="Ft20 textWhite">友情链接：</p>
+          <div class="marginT20">
+            <p class="Ft16 textD">中国法律应用案例网</p>
+            <p class="Ft16 textD">中国人民大学出版社</p>
+            <p class="Ft16 textD">北京人大数字科技有限公司</p>
+
+            <p class="Ft16 textD">国家法官学院</p>
+            <p class="Ft16 textD">中国人民大学法学院</p>
+          </div>
+        </div>
+        <div class="footerlist">
+          <p class="Ft20 textWhite">关注我们：</p>
+          <div class="marginT20">
+            <div class="coder fl">
+              <p><img src="../images/coder1.png" alt=""></p>
+              <p>扫码下载app</p>
+            </div>
+            <div class="coder fl">
+              <p><img src="../images/coderGZH.png" alt=""></p>
+              <p>关注我们</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footerB">
+      <span>© 2012 - 2020, RucDigt Inc. - All Rights Reserved</span>
+      <span>京ICP备12035694号-3</span>
+    </div>
+  </div>
+  <script src="../js/layui.all.js"></script>
+  <script src="../js/swiper.min.js"></script>
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <script src="../js/public.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $('.list_contentLaw').hide();
+      $('.NavTab a').click(function () {
+        $('.NavTab a').removeClass('active');
+        console.log($(this).html());
+        if ($(this).html() == "律所") {
+          $('.mainNav :first').hide();
+          $(this).addClass('active');
+          $('.list_content').hide();
+          $('.list_contentLaw').show();
+        } else {
+          $('.mainNav :first').show();
+          $(this).addClass('active');
+          $('.list_content').show();
+          $('.list_contentLaw').hide();
+        }
+      })
+      var Accordion = function (el, multiple) {
+        this.el = el || {};
+        this.multiple = multiple || false;
+
+        // Variables privadas
+        var links = this.el.find('.link');
+        // Evento
+        links.on('click', {
+          el: this.el,
+          multiple: this.multiple
+        }, this.dropdown)
+      };
+
+      Accordion.prototype.dropdown = function (e) {
+        var $el = e.data.el;
+        $this = $(this);
+        $next = $this.next();
+
+        $next.slideToggle();
+        $this.parent().toggleClass('open');
+
+        if (!e.data.multiple) {
+          $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+        }
+      };
+
+      var accordion = new Accordion($('.accordion'), false);
+    });
+  </script>
+</body>
+
+</html>

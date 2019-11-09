@@ -1,0 +1,58 @@
+input[type=search]::-webkit-search-cancel-button{ -webkit-appearance: none; position: relative; height: 15px; width: 15px; border-radius: 50%; background :#EBEBEB url("../images/delete.png") no-repeat center; background-size: 18px 18px; margin-right: 10px}
+.term-content input{
+    height: 37px;
+    border-radius: 3px;
+    border: 1px solid #d5d5d5;
+    width: 133px;
+    padding-left: 16px;
+}
+.tag{
+    font-size: 16px;
+}
+.tag .delete{
+    font-size: 20px;
+    cursor: pointer;
+}
+.layui-main>.textRed{
+    cursor: pointer;
+}
+.cTab{
+    font-size: 16px;
+    text-align: center;
+}
+.cTab td{
+    padding: 25px 38px;
+    width: 310px;
+    border:1px solid #e5e5e5;
+}
+.cTab tr td:nth-child(1){
+    text-align: left
+}
+.mainContent{
+    margin-bottom: 115px;
+}
+.character{
+    font-family: '微软雅黑';
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin:35px 0 63px 0;
+}
+.character span{
+    margin:6px;
+}
+.characterDiv{
+    font-family: '微软雅黑';
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 285px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.characterDiv div{
+    display: inline-block;
+    background-color: #ba162e;
+    color: #fff;
+    padding: 9px 95px;
+}

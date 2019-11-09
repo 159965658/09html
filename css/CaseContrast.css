@@ -1,0 +1,104 @@
+.term{
+    padding: 12px 0;
+}
+.nav-bar{
+    padding: 37px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contenTiele{
+    display: flex;
+    justify-content: space-around;
+    line-height: 105px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #be253b;
+}
+.contentDiv{
+    display: flex;
+    font-size: 14px;
+}
+.contentLeft{
+    width: 403px;
+    background-color: #f7f7f7;
+    height: 375px;
+    padding: 30px 0 0 32px;
+}
+.contentRight{
+    margin: 0 10px;
+    width: 403px;
+    background-color: #f7f7f7;
+    height: 375px;
+    padding: 30px 0 0 32px
+}
+.lnList{
+    width: 272px;;
+}
+.tag{
+    font-size: 16px;
+}
+.tag .delete{
+    font-size: 20px;
+    cursor: pointer;
+}
+.layui-main>.textRed{
+    cursor: pointer;
+}
+.NavTab{
+    margin: 20px 0;
+}
+.NavTab a.active {
+    background: #BA162D;
+    color: #fff;
+}
+.NavTab a{
+    margin: 0 25px;
+    color: #666;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 25px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 5px
+}
+.lnListPage{
+    font-size: 14px;
+}
+.listTyC>.fr>.layui-form{
+    margin: 0 10px;
+}
+.btnxs, a.btn{
+    padding: 0 11px;
+}
+.bgBLine {
+    border: 1px solid #156fa1;
+}
+.Select .layui-input{
+    line-height: 25px;
+}
+.listTyC .text-titlelg{
+    margin-left: -30px;
+}
+.lineDiv{
+    display: flex;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.lineDiv>div{
+    margin-right: 10px;
+}
+.lineDiv>em{
+    background: url(../images/person.png) no-repeat;
+    float: left;
+    display: block;
+    width: 19px;
+    height: 16px;
+    position: absolute;
+    margin-top: 2px;
+}
+.lineDiv>em+div{
+    margin-left: 28px;
+}
+.pageM{
+    font-size: 14px;
+}

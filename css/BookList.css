@@ -1,0 +1,36 @@
+
+.layui-main>.textRed{
+    cursor: pointer;
+}
+.lnListPage{
+    font-size: 14px;
+}
+.listTy{
+    display: flex;
+}
+.listTyC>.fr>.layui-form{
+    margin: 0 10px;
+}.listTyC.listTyClg{
+    margin-left: 0px;
+}
+.Select .layui-input{
+    line-height: 25px;
+}
+.lineDiv{
+    display: flex;
+    font-size: 14px;
+    margin-top: 12px;
+}
+.pageM{
+    font-size: 14px;
+}
+.title span{
+    font-size: 12px;
+}
+.listTy.Pad{
+    padding: 28px 0px 40px 25px;
+}
+.listcontent{
+    margin-left: 42px;
+    padding-top: 5px;
+}
