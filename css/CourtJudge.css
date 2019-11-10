@@ -16,6 +16,9 @@
 .NavTab{
     margin:0;
 }
+.label-right > i {
+    margin-left: 25px;
+  }
 .NavTab a.active {
     background: #BA162D;
     color: #fff;
@@ -71,15 +74,19 @@
 .pageM{
     font-size: 14px;
 }
-
-.nav-bar{
+.nav-bar-full {
     background-color: #f1f1f1;
+    width: 100%;
+  }
+.nav-bar {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 18px;
     height: 62px;
-}
-.nav-bar>div{
-    padding-top: 18px;
-    padding-left: 155px;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 .mainTopLeft{
     margin: 43px 0px 0px 12px;
     width: 895px;

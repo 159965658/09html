@@ -21,18 +21,138 @@
 .contentLeft{
     width: 403px;
     background-color: #f7f7f7;
-    height: 375px;
-    padding: 30px 0 0 32px;
+    padding: 30px 0 52px 32px;
+    margin-bottom: 12px;
+    line-height: 30px;
+    height: auto;
+}
+.contentLeft:first-child{
+    padding: 30px 0 24px 32px;
+}
+.label-right > i {
+    margin-left: 25px;
+  }
+.contentLeft span{
+    display: block;
+    line-height: 32px;
+}
+.contentDiv p{
+    padding-right: 25px;
 }
 .contentRight{
     margin: 0 10px;
     width: 403px;
     background-color: #f7f7f7;
-    height: 375px;
-    padding: 30px 0 0 32px
+    line-height: 30px;
+    height: auto;
+    padding: 30px 0 52px 32px;
+    margin-bottom: 12px;
 }
+.contentRight:first-child{
+    padding: 30px 0 24px 32px;
+}
+.contentRight span{
+    display: block;
+    line-height: 32px;
+}
+.Dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 12px;
+    background-color: #b31d26;
+    display: inline-block;
+    margin-left: 28px;
+}
+.mainTopLeft {
+    margin: 12px 0px 0px 12px;
+    width: 895px;
+    float: left;
+  }
+  .mainTopLeft .border {
+    padding: 0px 0px 37px 0px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .mainTopLeft .border .border-right {
+    margin-left: 200px;
+  }
+  .person-content {
+    padding-left: 22px;
+    padding-right: 22px;
+    color: #666;
+    font-size: 14px;
+  }
+.person-content > p {
+    line-height: 30px;
+  }
+.relevant {
+    color: #999;
+  }
+  .relevant-title {
+    font-size: 20px;
+    color: #ba162d;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999999;
+    font-weight: bold;
+  }
+  .center {
+    text-align: center;
+  }
+  .relevant-title > span {
+    font-size: 12px;
+    color: #04659a;
+  }
+  .relevant-item {
+    margin-top: 10px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    background-color: #fafafa;
+    color: #a0a0a0;
+    font-size: 14px;
+    width: 244px;
+    padding-left: 27px;
+  }
+  .relevant-item > p {
+    line-height: 30px;
+  }
+  .relevant-item-title {
+    font-size: 16px;
+    color: #04659a;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
 .lnList{
-    width: 272px;;
+    width: 275px;;
+}
+.sideMenu h3{
+    display: inline-block;
+    margin-right: 28px;
+    padding-left: 20px;
+}
+.Dot~h3{
+    padding-left: 10px;
+}
+.btnBlue{
+    margin-right: 0;
+}
+.btnWhite{
+    padding: 0 11px;
+    line-height: 24px;
+    display: inline-block;
+    background: #fff;
+    color: #04659a;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 0px;
+    cursor: pointer;
+    border: 1px solid #b5d1e0;
+}
+.btnWhite:hover{
+    background: #04659a;
+    color: #fff;
 }
 .tag{
     font-size: 16px;
@@ -72,33 +192,4 @@
 }
 .bgBLine {
     border: 1px solid #156fa1;
-}
-.Select .layui-input{
-    line-height: 25px;
-}
-.listTyC .text-titlelg{
-    margin-left: -30px;
-}
-.lineDiv{
-    display: flex;
-    font-size: 14px;
-    margin-top: 15px;
-}
-.lineDiv>div{
-    margin-right: 10px;
-}
-.lineDiv>em{
-    background: url(../images/person.png) no-repeat;
-    float: left;
-    display: block;
-    width: 19px;
-    height: 16px;
-    position: absolute;
-    margin-top: 2px;
-}
-.lineDiv>em+div{
-    margin-left: 28px;
-}
-.pageM{
-    font-size: 14px;
 }
