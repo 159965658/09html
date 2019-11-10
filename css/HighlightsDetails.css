@@ -207,7 +207,7 @@ a.btn {
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #e5e5e5;
   font-weight: bold;
 }
 .center {
@@ -232,10 +232,11 @@ a.btn {
   line-height: 30px;
 }
 .relevant-item-title {
-  font-size: 16px;
+  font-size: 12px;
   color: #04659a;
   padding-top: 15px;
   padding-bottom: 25px;
+  cursor: pointer;
 }
 .chartTitle {
   font-size: 18px;
@@ -292,24 +293,37 @@ a.btn {
   padding-top: 5px;
 }
 
+.Dot{
+  width: 6px;
+  height: 6px;
+  border-radius: 12px;
+  background-color: #b31d26;
+  display: inline-block;
+  margin-left: 10px;
+}
 .in-list-right {
   background-color: #fafafa;
   margin-top: 10px;
   font-size: 14px;
   color: #595959;
+  padding: 0 4px;
 }
 .in-list-right > .relevant-title {
-  padding-left: 0px;
+  padding-left: 8px;
+}
+.tree-in-list > p{
+    line-height: 35px;
 }
 .tree-in-list > p > span {
   color: #ba162d;
+  margin-left: 6px;
 }
 
 .tree-in-list{
-    padding-top: 10px;
-    height: 126px;
-    overflow: hidden;
-    padding-left: 5px;
+  padding-top: 10px;
+  height: 130px;
+  overflow: hidden;
+  padding-left: 5px;
 }
 .none{
     height: 30px;

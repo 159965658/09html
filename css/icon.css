@@ -26,9 +26,14 @@
   height: 18px;
   background-image: url("../images/a_user.png");
 }
-
+.icon-open::before {
+  height: 8px;
+  width: 9px;
+  background-image: url("../images/open.png");
+}
 .icon-book::before {
     height: 18px;
     background-image: url("../images/a_book.png");
-  }
+}
+  
   
